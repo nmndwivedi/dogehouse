@@ -34,7 +34,7 @@ export const Home: React.FC<HomeProps> = () => {
     <div className={`flex flex-col flex-1`}>
       <Wrapper>
         <BodyWrapper>
-          <div className={`mb-10 mt-8`}>
+          <div className={`mb-6 mt-8`}>
             <Logo />
           </div>
           <div className={`mb-6 flex justify-center`}>
@@ -53,7 +53,7 @@ export const Home: React.FC<HomeProps> = () => {
             </div>
           </div>
           {currentRoom ? (
-            <div className={`my-8`}>
+            <div className={`my-6`}>
               <RoomCard
                 active
                 onClick={() => history.push("/room/" + currentRoom.id)}
@@ -94,19 +94,22 @@ export const Home: React.FC<HomeProps> = () => {
           <div style={{ height: 40 }} />
         </BodyWrapper>
       </Wrapper>
-      <BottomVoiceControl>
-        <div className={`mb-8 flex px-5`}>
-          <Button
-            variant="slim"
-            dogeProbability={0.01}
-            onClick={() => {
-              setShowCreateRoomModal(true);
-            }}
-          >
-            <h3 className={`text-2xl`}>Create Room</h3>
-          </Button>
-        </div>
-      </BottomVoiceControl>
+              
+      <div style={{background: `linear-gradient(${"#1e1e1e00"}, ${"#1e1e1e"})`}}>
+        <BottomVoiceControl>
+          <div className={`mb-8 flex px-5`}>
+            <Button
+              variant="slim"
+              dogeProbability={.2}
+              onClick={() => {
+                setShowCreateRoomModal(true);
+              }}
+            >
+              <h3 className={`text-2xl`}>Create Room</h3>
+            </Button>
+          </div>
+        </BottomVoiceControl>
+      </div>
       {showCreateRoomModal ? (
         <CreateRoomModal onRequestClose={() => setShowCreateRoomModal(false)} />
       ) : null}

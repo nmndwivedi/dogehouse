@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import DogeHouse from "../../assets/dogehouse.png";
+// import DogeHouse from "../../assets/dogehouse.png";
 import { ArrowLeft } from "react-feather";
 
 interface BackbarProps {
@@ -30,7 +30,8 @@ export const Backbar: React.FC<BackbarProps> = ({
             history.push("/");
           }}
         >
-          <img className={`w-12`} src={DogeHouse} alt="dogehouse" />
+          <ArrowLeft color="#fff" size={30} />
+          {/* <img className={`w-12`} src={DogeHouse} alt="dogehouse" /> */}
         </button>
       )}
       {children}

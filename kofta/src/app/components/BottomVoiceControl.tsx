@@ -20,7 +20,7 @@ import { useShouldFullscreenChat } from "../modules/room-chat/useShouldFullscree
 import { PaginatedBaseUsers } from "../types";
 import { GET_BLOCKED_FROM_ROOM_USERS } from "./BlockedFromRoomUsers";
 import { modalConfirm } from "./ConfirmModal";
-import { Footer } from "./Footer";
+// import { Footer } from "./Footer";
 import { RoomSettingsModal } from "./RoomSettingsModal";
 
 interface BottomVoiceControlProps {}
@@ -204,13 +204,13 @@ export const BottomVoiceControl: React.FC<BottomVoiceControlProps> = ({
           </button>
         ) : null}
         <div
-          className={`border-simple-gray-80 bg-simple-gray-26 border-t w-full mt-auto p-5`}
+          className={`border-simple-gray-80 bg-simple-gray-26 border-t w-full mt-auto ${currentRoom?"p-5":"p-0"}`}
         >
           {currentRoom ? (
             <div className={`flex justify-around`}>{buttons}</div>
           ) : (
             <div className={`px-5`}>
-              <Footer />
+              {/* <Footer /> */}
             </div>
           )}
         </div>

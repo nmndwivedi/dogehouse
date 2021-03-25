@@ -2,8 +2,8 @@ import { Provider } from "jotai";
 import React from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { WebviewApp } from "./vscode-webview/App";
-import { MuteTitleUpdater } from "./vscode-webview/components/MuteTitleUpdater";
+import { WebviewApp } from "./app/App";
+import { MuteTitleUpdater } from "./app/components/MuteTitleUpdater";
 
 interface WebviewWrapperProps {}
 

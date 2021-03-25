@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Button } from "../components/Button";
-import { Footer } from "../components/Footer";
+// import { Footer } from "../components/Footer";
 import { Wrapper } from "../components/Wrapper";
 import { apiBaseUrl, __prod__, __staging__ } from "../constants";
 import { Logo } from "../svgs/Logo";
@@ -32,30 +32,22 @@ export const Login: React.FC<LoginProps> = () => {
           <div className={`my-8`}>
             <Logo />
           </div>
-          <div className={`text-4xl mb-4 tracking-tight font-extrabold`}>
-            Taking voice conversations to the moon 🚀
+          <div className={`text-4xl my-4 tracking-tight font-extrabold text-center`}>
+            24x7 Devotee Association Online 🦚
           </div>
-          <ul className={`my-4 mb-10 text-xl`}>
-            <ListItem>Dark theme</ListItem>
-            <ListItem>Open sign ups</ListItem>
-            <ListItem>Cross platform support</ListItem>
-            <ListItem>
-              <a
-                href="https://github.com/benawad/dogehouse"
-                className={`p-0 text-blue-400`}
-              >
-                Open Source
-              </a>
-            </ListItem>
-            <ListItem>Text chat</ListItem>
-            <ListItem>Powered by Doge</ListItem>
+          <ul className={`my-6 mb-10 text-xl`}>
+            <ListItem>📿 • Chant together</ListItem>
+            <ListItem>🗣️ • Shloka recitation</ListItem>
+            <ListItem>📖 • Bhagvatam discussions</ListItem>
+            <ListItem>💬 • Random conversations</ListItem>
+            <ListItem>💡 • Whatever you can imagine</ListItem>
           </ul>
           <div className={`mb-8`}>
             <Button
               variant="slim"
               style={{ backgroundColor: "#333" }}
               onClick={() =>
-                (window.location.href =
+                (window.location.href = 
                   apiBaseUrl +
                   "/auth/github/web" +
                   (__staging__
@@ -113,9 +105,9 @@ export const Login: React.FC<LoginProps> = () => {
           ) : null}
         </BodyWrapper>
       </Wrapper>
-      <div className={`mb-6 px-5`}>
+      {/* <div className={`mb-6 px-5`}>
         <Footer isLogin />
-      </div>
+      </div> */}
       <AlertModal />
       <PromptModal />
       <ConfirmModal />

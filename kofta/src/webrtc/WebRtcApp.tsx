@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useHistory } from "react-router-dom";
-import { useMicIdStore } from "../vscode-webview/shared-stores";
+import { useMicIdStore } from "../app/shared-stores";
 import { ActiveSpeakerListener } from "./components/ActiveSpeakerListener";
 import { AudioRender } from "./components/AudioRender";
 import { useCurrentRoomStore } from "./stores/useCurrentRoomStore";

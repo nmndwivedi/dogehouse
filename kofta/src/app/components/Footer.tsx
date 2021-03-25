@@ -14,7 +14,7 @@ export const Footer: React.FC<FooterProps> = ({ isLogin }) => {
         </RegularAnchor>
       ) : null}
       <RegularAnchor href="https://discord.gg/wCbKBZF9cV">
-        Discord
+        Discordo
       </RegularAnchor>
       <RegularAnchor href="https://github.com/benawad/dogehouse/issues">
         Report a Bug

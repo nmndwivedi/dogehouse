@@ -1,6 +1,6 @@
 import create from "zustand";
 import { combine } from "zustand/middleware";
-import { useSoundEffectStore } from "../../vscode-webview/modules/sound-effects/useSoundEffectStore";
+import { useSoundEffectStore } from "../../app/modules/sound-effects/useSoundEffectStore";
 
 export const useMuteStore = create(
   combine(

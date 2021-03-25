@@ -7,9 +7,9 @@ export const MuteTitleUpdater: React.FC<MuteTitleUpdaterProps> = ({}) => {
   const { muted } = useMuteStore();
   useEffect(() => {
     if (muted) {
-      document.title = "Muted | DogeHouse";
+      document.title = "Muted | Goloka Vrindavan";
     } else {
-      document.title = "DogeHouse";
+      document.title = "Goloka Vrindavan";
     }
   }, [muted]);
   return null;

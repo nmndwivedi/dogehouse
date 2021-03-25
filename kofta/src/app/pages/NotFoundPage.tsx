@@ -17,7 +17,7 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = () => {
           Whoops! This page got lost in conversation.
         </div>
         Not to worry. You can 
-        <Link to="/" className={`text-blue-400`}>
+        <Link to="/" className={`text-blue-400 ml-1`}>
           go home
         </Link>
       </BodyWrapper>

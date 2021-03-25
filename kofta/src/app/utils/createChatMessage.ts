@@ -1,4 +1,4 @@
-import { linkRegex } from "./../constants";
+import { linkRegex } from "../constants";
 import { BaseUser } from "../types";
 
 // @ts-ignore

@@ -1,7 +1,7 @@
 import { useAtom } from "jotai";
 import React, { useEffect, useRef, useState } from "react";
-import { Button } from "../../vscode-webview/components/Button";
-import { volumeAtom } from "../../vscode-webview/shared-atoms";
+import { Button } from "../../app/components/Button";
+import { volumeAtom } from "../../app/shared-atoms";
 import { useConsumerStore } from "../stores/useConsumerStore";
 
 interface AudioRenderProps {}
